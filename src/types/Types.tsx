@@ -27,6 +27,17 @@ export type TabsProps = {
     children: React.ReactElement<TabProps>[];
 };
 
+export interface CommentType {
+    id: string;
+    author?: string;
+    email?: string;
+    website?: string;
+    comment?: string;
+    createdAt?: any; // timestamp gibi olabilir, Firebase Timestamp vs.
+}
+
+
+
 
 // export interface Blog {
 //     id: number;

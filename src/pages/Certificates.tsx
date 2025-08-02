@@ -15,15 +15,7 @@ import development from '../assets/images/certificates/development.png';
 import design from '../assets/images/certificates/design.png';
 import skills from '../assets/images/certificates/skills.png';
 import react from '../assets/images/certificates/react.png';
-import myportfolio5 from '../assets/images/portfolio/portfolio5.jpg';
-import myportfolio6 from '../assets/images/portfolio/portfolio6.jpg';
 
-import portfolioLg1 from '../assets/images/portfolio/portfolio1_lg.jpg';
-import portfolioLg2 from '../assets/images/portfolio/portfolio2_lg.jpg';
-import portfolioLg3 from '../assets/images/portfolio/portfolio3_lg.jpg';
-import portfolioLg4 from '../assets/images/portfolio/portfolio4_lg.jpg';
-import portfolioLg5 from '../assets/images/portfolio/portfolio5_lg.jpg';
-import portfolioLg6 from '../assets/images/portfolio/portfolio6_lg.jpg';
 
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from "react-scroll";

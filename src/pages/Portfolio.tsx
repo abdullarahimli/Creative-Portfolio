@@ -1,12 +1,10 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import Slider from "react-slick";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // Pluginler
-import lgThumbnail from 'lightgallery/plugins/thumbnail';
-import lgZoom from 'lightgallery/plugins/zoom';
-import lgFullscreen from 'lightgallery/plugins/fullscreen';
+
 
 // CSS
 import 'lightgallery/css/lightgallery.css';
@@ -17,11 +15,7 @@ import 'lightgallery/css/lg-zoom.css';
 
 
 import quote from '../assets/images/icon/quote.png'
-import client1 from '../assets/images/client/client1.png'
-import client2 from '../assets/images/client/client2.png'
-import client3 from '../assets/images/client/client3.png'
-import teymur from '../assets/images/review/teymur.png'
-import lightGallery from 'lightgallery';
+
 
 import hermes_lg from '../assets/images/portfolio/hermes_lg.png';
 import gemza_lg from '../assets/images/portfolio/gemza_lg.png';
@@ -29,7 +23,6 @@ import bacola_lg from '../assets/images/portfolio/bacola_lg.png'
 import foodmarket_lg from '../assets/images/portfolio/foodmarket_lg.png'
 import duralux_lg from '../assets/images/portfolio/duralux_lg.png'
 import cooper_lg from '../assets/images/portfolio/cooper_lg.png'
-import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from "react-scroll";
 import reviews from '../data/reviews.json'
 

@@ -1,16 +1,9 @@
-
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import '../src/assets/css/animate.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Header from './components/Common/Header'
-import Home from './pages/Home'
-import About from './pages/About'
-import Resume from './pages/Resume'
-import Portfolio from './pages/Portfolio'
-import Blog from './pages/Blog'
-import Contact from './pages/Contact'
 import Footer from './components/Common/Footer'
 import MainLayout from './Layout/MainLayout'
 import './assets/css/style.css'

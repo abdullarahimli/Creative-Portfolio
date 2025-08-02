@@ -461,8 +461,8 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import Slider from 'react-slick';
 import blogs from '../data/blogs.json';
-import comment1 from '../assets/images/comment1.jpg';
-import comment2 from '../assets/images/comment2.jpg';
+// import comment1 from '../assets/images/comment1.jpg';
+// import comment2 from '../assets/images/comment2.jpg';
 import profile from '../assets/images/client/profile.png'
 import RenderContent from '../components/RenderContent';
 
@@ -471,7 +471,8 @@ import RenderContent from '../components/RenderContent';
 import React, { useEffect, useState } from 'react';
 import { collection, addDoc, serverTimestamp, query, where, orderBy, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';  // firebase.js dosyandan doğru path ile
-import { deleteComment } from '../services/deleteComment';
+import type { CommentType } from '../types/Types';
+// import { deleteComment } from '../services/deleteComment';
 
 
 
@@ -480,7 +481,8 @@ const BlogDetails = () => {
     const { id } = useParams<{ id: string }>();
     const blog = blogs.find((b) => b.id === id);
 
-    const [comments, setComments] = useState([]);
+    const [comments, setComments] = useState<CommentType[]>([]);
+
 
 
     const [author, setAuthor] = useState('');
@@ -525,7 +527,7 @@ const BlogDetails = () => {
     }, [id]);
 
     // Yorum gönderme
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         if (!author || !email || !commentText) {
