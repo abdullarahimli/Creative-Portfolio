@@ -20,8 +20,6 @@
 // const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 
-
-
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAnalytics } from "firebase/analytics";
@@ -33,16 +31,11 @@ const firebaseConfig = {
   storageBucket: "portfolio-comments-f5bcb.firebasestorage.app",
   messagingSenderId: "692983158238",
   appId: "1:692983158238:web:6b7f0b5207cccecd56b94f",
-  measurementId: "G-JBTC8FQLNK"
+  measurementId: "G-JBTC8FQLNK",
 };
 
-// Firebase'i başlat
 const app = initializeApp(firebaseConfig);
 
-// Firestore'u al
 const db = getFirestore(app);
-
-// İstersen analytics kullanmaya devam et
-const analytics = getAnalytics(app);
 
 export { db };

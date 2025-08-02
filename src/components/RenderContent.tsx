@@ -15,6 +15,7 @@ export interface ListItem {
 
 export interface ContentBlock {
     type:
+    | 'text'
     | 'title'
     | 'paragraph'
     | 'subtitle'
@@ -38,7 +39,7 @@ export interface ContentBlock {
     contentItems?: ContentBlock[];
 }
 
-const RenderContent: React.FC<{ block: ContentBlock; index: number }> = ({ block, index }) => {
+export const RenderContent: React.FC<{ block: ContentBlock; index: number }> = ({ block, index }) => {
     const settings = {
         dots: true,
         arrows: false,

@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import blogs from '../data/blogs.json';
 import profile from '../assets/images/client/profile.png'
-import RenderContent from '../components/RenderContent';
+import RenderContent, { type ContentBlock } from '../components/RenderContent';
 
 
 import React, { useEffect, useState } from 'react';
@@ -147,7 +147,7 @@ const BlogDetails = () => {
                     <div className="row">
                         <div className="col-lg-10 offset-md-1">
                             <div className="st-post-details st-style1">
-                                {blog.content.map((block, index) => (
+                                {(blog.content as ContentBlock[]).map((block, index) => (
                                     <RenderContent key={index} block={block} index={index} />
                                 ))}
 
