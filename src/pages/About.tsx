@@ -206,8 +206,8 @@ const SkillsSection: React.FC = () => {
                                         </ul>
                                         <div className="st-text-block-btn">
                                             <a
-                                                download
-                                                href="/cv/cv.pdf"
+                                                download="CV.pdf"
+                                                href="/cv/CV.pdf"
                                                 className="st-btn st-style1 st-color1"
                                             >
                                                 Download CV
