@@ -1,32 +1,12 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import $ from 'jquery';
 import 'jquery.ripples';
 import heroBg from '../assets/images/hero-bg-1.jpg';
 import myPhoto from '../assets/images/section/aboutImage1.png';
 
 const Home = () => {
+
     const rippleRef = useRef(null);
-
-
-    // useEffect(() => {
-
-    //     if (rippleRef.current) {
-    //         $(rippleRef.current).ripples({
-    //             resolution: 512,
-    //             dropRadius: 20,
-    //             perturbance: 0.04,
-    //         });
-    //     }
-
-    //     // Cleanup ripple on unmount
-    //     return () => {
-    //         if (rippleRef.current) {
-    //             $(rippleRef.current).ripples('destroy');
-    //         }
-    //     };
-    // }, []);
-
-
 
     useEffect(() => {
         const isMobile = window.innerWidth < 768;

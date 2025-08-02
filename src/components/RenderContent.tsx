@@ -1,19 +1,19 @@
 import React from 'react';
 import Slider from "react-slick";
 
-interface ListTextPart {
+export interface ListTextPart {
     type: 'underline' | 'highlight' | 'link' | 'text' | 'extrabold';
     text: string;
     color?: string;
     href?: string;
 }
 
-interface ListItem {
+export interface ListItem {
     bold: string;
     text: string | ListTextPart[];
 }
 
-interface ContentBlock {
+export interface ContentBlock {
     type:
     | 'title'
     | 'paragraph'
@@ -63,65 +63,6 @@ const RenderContent: React.FC<{ block: ContentBlock; index: number }> = ({ block
     };
 
     switch (block.type) {
-        // case 'paragraph':
-        //     if (Array.isArray(block.content)) {
-        //         return (
-        //             <p key={index}>
-        //                 {block.content.map((part, i) => {
-        //                     switch (part.type) {
-        //                         case 'text':
-        //                             return <span key={i}>{part.text}</span>;
-
-        //                         case 'link':
-        //                             return (
-        //                                 <a
-        //                                     key={i}
-        //                                     href={part.href}
-        //                                     target="_blank"
-        //                                     rel="noopener noreferrer"
-        //                                     style={{
-        //                                         color: part.color || block.color || "#fec544",
-        //                                         textDecoration: 'underline',
-        //                                     }}
-        //                                 >
-        //                                     {part.text}
-        //                                 </a>
-        //                             );
-
-        //                         case 'highlight':
-        //                             return (
-        //                                 <span
-        //                                     key={i}
-        //                                     style={{
-        //                                         backgroundColor: part.color || '#ffff00',
-        //                                         padding: '0 4px',
-        //                                         borderRadius: '2px',
-        //                                     }}
-        //                                 >
-        //                                     {part.text}
-        //                                 </span>
-        //                             );
-
-        //                         case 'underline':
-        //                             return <u key={i}>{part.text}</u>;
-
-        //                         case 'extrabold':
-        //                             return (
-        //                                 <span key={i} style={{ fontWeight: 800 }}>
-        //                                     {part.text}
-        //                                 </span>
-        //                             );
-
-        //                         default:
-        //                             return null;
-        //                     }
-        //                 })}
-        //             </p>
-        //         );
-        //     } else if (block.text) {
-        //         return <p key={index}>{block.text}</p>;
-        //     }
-        //     return null;
 
         case 'paragraph':
             {
@@ -246,13 +187,8 @@ const RenderContent: React.FC<{ block: ContentBlock; index: number }> = ({ block
                 </a>
             );
 
-
-
-
         case 'br':
             return <br key={index} />;
-
-
 
         case 'list':
             return (

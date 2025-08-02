@@ -2,21 +2,10 @@ import { useEffect } from 'react';
 import Slider from "react-slick";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
-// Pluginler
-
-
-// CSS
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-thumbnail.css';
 import 'lightgallery/css/lg-zoom.css';
-
-
-
-
 import quote from '../assets/images/icon/quote.png'
-
-
 import hermes_lg from '../assets/images/portfolio/hermes_lg.png';
 import gemza_lg from '../assets/images/portfolio/gemza_lg.png';
 import bacola_lg from '../assets/images/portfolio/bacola_lg.png'
@@ -51,7 +40,7 @@ const Portfolio = () => {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
-                    dots: true, // ✅ Sadece mobilde dots aktif
+                    dots: true,
                 }
             }
         ]
@@ -59,24 +48,10 @@ const Portfolio = () => {
 
     useEffect(() => {
         AOS.init({
-            duration: 1000, // animasiyanın müddəti (ms)
-            once: true,     // sadəcə bir dəfə animasiya olsun
+            duration: 1000,
+            once: true,
         });
     }, []);
-
-    // useEffect(() => {
-    //     const galleries = document.querySelectorAll('.st-lightgallery');
-
-    //     for (const gallery of galleries) {
-    //         lightGallery(gallery as HTMLElement, {
-    //             selector: '.st-lightbox-item',
-    //             subHtmlSelectorRelative: false,
-    //             thumbnail: false,
-    //             mousewheel: true,
-    //             plugins: [lgThumbnail, lgZoom, lgFullscreen],
-    //         });
-    //     }
-    // }, []);
 
     const portfolioItems = [
         {
@@ -151,7 +126,6 @@ const Portfolio = () => {
                                             href={item.lg}
                                             className="st-portfolio st-zoom st-lightbox-item"
                                         >
-                                            {/* Küçük resim çerçevesi */}
                                             <div
                                                 className="st-portfolio-img st-zoom-in bg-[#F3EFE8] flex justify-center items-center overflow-hidden w-[370px] h-[300px] mx-auto sm:w-full"
                                                 style={{

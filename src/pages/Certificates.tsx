@@ -1,12 +1,10 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import lightGallery from 'lightgallery';
 
-// Pluginler
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import lgFullscreen from 'lightgallery/plugins/fullscreen';
 
-// CSS
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-thumbnail.css';
 import 'lightgallery/css/lg-zoom.css';
@@ -17,7 +15,6 @@ import skills from '../assets/images/certificates/skills.png';
 import react from '../assets/images/certificates/react.png';
 
 
-import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from "react-scroll";
 
 import '../assets/css/style.css';
@@ -35,10 +32,10 @@ const Certificates = () => {
                 rotate: true,
                 plugins: [lgThumbnail, lgZoom, lgFullscreen],
                 mobileSettings: {
-                    controls: true,           // Tüm kontrolleri göster
-                    showCloseIcon: true,      // Close butonunu göster
-                    download: true,          // İstersen indir butonunu gizle veya göster
-                    rotate: true,            // Dönebilme butonu (varsayılan yok)
+                    controls: true,
+                    showCloseIcon: true,
+                    download: true,
+                    rotate: true,
                 },
             });
         }
@@ -101,7 +98,6 @@ const Certificates = () => {
                                             href={item.lg}
                                             className="st-portfolio st-zoom st-lightbox-item"
                                         >
-                                            {/* Küçük resim çerçevesi */}
                                             <div
                                                 className="st-portfolio-img st-zoom-in bg-[#F3EFE8] flex justify-center items-center overflow-hidden w-[370px] h-[300px] mx-auto sm:w-full"
                                                 style={{
