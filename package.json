@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "vercel-build": "npm install --legacy-peer-deps && npm run build"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -24,9 +25,9 @@
     "jquery.ripples": "^0.6.3",
     "lightgallery": "^2.8.3",
     "particl": "^0.8.3",
-    "react": "^19.1.0",
+    "react": "^18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
-    "react-dom": "^19.1.0",
+    "react-dom": "^18.2.0",
     "react-markdown": "^10.1.0",
     "react-ripples": "^2.2.1",
     "react-router-dom": "^7.6.1",
