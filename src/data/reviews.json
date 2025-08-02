@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "name": "Alovsat Muslumov",
+    "role": "Prof.Dr",
+    "text": "Designed user-friendly interfaces that improved engagement and met goals.",
+    "img": "/src/assets/images/review/alovsat.png"
+  },
+  {
+    "id": 2,
+    "name": "Teymur Rahimli",
+    "role": "Senior Developer",
+    "text": "Led the team to deliver quality software on time, ensuring smooth collaboration.",
+    "img": "/src/assets/images/review/teymur.png"
+  },
+  {
+    "id": 3,
+    "name": "Tabriz Aliyev",
+    "role": "Financial Manager",
+    "text": "Oversaw projects efficiently, maintaining teamwork and delivering on schedule.",
+    "img": "/src/assets/images/review/tabriz.png"
+  },
+
+  {
+    "id": 4,
+    "name": "Farid Zalov",
+    "role": "Accounting Manager",
+    "text": "Met milestones with attention to detail and fostered team communication.",
+    "img": "/src/assets/images/review/farid.png"
+  }
+]

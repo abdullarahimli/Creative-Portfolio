@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "../src/assets/css/style.css";
+@import "aos/dist/aos.css";
+@import "../src/assets/css/animate.css";
+
+
+/* slick-dots ul */
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* slick-dots li */
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.csHide {
+  display: none !important;
+}
+
+/* aktif dot */
+.slick-dots li.slick-active div {
+  background-color: #3f4651 !important;
+
+  transition: all 0.3s ease;
+  transform: scale(1.3);
+}
+.slick-list {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}

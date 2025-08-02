@@ -1,0 +1,1617 @@
+[
+  {
+    "id": "1",
+    "mainTitle": "What is React? A Beginner's Guide",
+    "shortTitle": "What is React? A Beginner's Guide",
+    "author": "Abdulla Rahimli",
+    "date": "26-07-2025",
+    "mainImage": "/src/assets/images/blog/blog-1/react.png",
+    "tags": [
+      "React",
+      "JavaScript",
+      "UI",
+      "Frontend",
+      "npm",
+      "Web Development",
+      "Components"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "React is one of the most popular JavaScript libraries for building user interfaces, especially single-page applications. Created and maintained by Facebook, React helps developers create fast, interactive, and reusable UI components with ease."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you are new to web development or just starting with React, this guide will help you understand what React is, why it’s so popular, and how to start building your first React app using npm."
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-1/npm1.webp",
+        "alt": "npm image"
+      },
+      {
+        "type": "subtitle",
+        "text": "What is React?"
+      },
+      {
+        "type": "paragraph",
+        "text": "React is a JavaScript library (not a full framework) focused on building UI components. Unlike traditional web development where you manipulate the DOM directly, React allows you to create components that manage their own state and efficiently update the UI when the data changes."
+      },
+      {
+        "type": "subtitle",
+        "text": "Key Features of React"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "bold": "Component-Based:",
+            "text": "Your UI is made of components, which can be reused and nested."
+          },
+          {
+            "bold": "Declarative:",
+            "text": "You describe what the UI should look like, and React takes care of updating it efficiently."
+          },
+          {
+            "bold": "Virtual DOM:",
+            "text": "React uses a virtual DOM to minimize costly updates, making apps faster."
+          },
+          {
+            "bold": "One-way Data Binding:",
+            "text": "Data flows in one direction, making your app predictable and easier to debug."
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "Setting Up Your First React Project Using npm"
+      },
+      {
+        "type": "paragraph",
+        "text": "To start working with React, you need to have Node.js and npm installed on your computer. You can check if they are installed by running:"
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-1/nodeversion.png",
+        "alt": "Node version"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "If you don’t have them installed, download and install Node.js from "
+          },
+          {
+            "type": "link",
+            "text": "nodejs.org",
+            "href": "https://nodejs.org/en",
+            "color": "white"
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "Step 1: Create a React App Using Create React App"
+      },
+      {
+        "type": "paragraph",
+        "text": "React has an official tool called Create React App that sets up everything you need to start a project."
+      },
+      {
+        "type": "paragraph",
+        "text": "Open your terminal and run:"
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-1/createreactapp.png",
+        "alt": "Create React App command"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This command will create a folder called "
+          },
+          {
+            "type": "highlight",
+            "text": "my-first-react-app",
+            "color": "#424242"
+          },
+          {
+            "type": "text",
+            "text": " and set up a React project inside it."
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "Step 2: Navigate Into Your Project Folder"
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-1/firstapp.png",
+        "alt": "Navigate project folder"
+      },
+      {
+        "type": "subtitle",
+        "text": "Step 3: Start the Development Server"
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-1/stratproject.png",
+        "alt": "Start development server"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "This will start the React development server, and your new React app will open in your browser at "
+          },
+          {
+            "type": "link",
+            "text": "http://localhost:3000.",
+            "href": "http://localhost:3000.",
+            "color": "#FEC544"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "You should see the default React welcome screen!"
+      },
+      {
+        "type": "slider",
+        "className": "st-slider st-style1 mb-5",
+        "images": [
+          "/src/assets/images/blog/blog-1/reactWelcomePage.png",
+          "/src/assets/images/blog/blog-1/reactWelcomePageEdited.png"
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "Understanding the Project Structure"
+      },
+      {
+        "type": "paragraph",
+        "text": "Inside your React project, you will find these important files:"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "bold": "public/index.html -",
+            "text": "The single HTML page that contains your React app."
+          },
+          {
+            "bold": "src/index.js -",
+            "text": "The JavaScript entry point that renders your React app into the page."
+          },
+          {
+            "bold": "src/App.js -",
+            "text": "The main React component."
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "Writing Your First React Component"
+      },
+      {
+        "type": "paragraph",
+        "text": "React components are JavaScript functions or classes that return UI elements. The simplest way is to create a function component."
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Open "
+          },
+          {
+            "type": "highlight",
+            "text": "src/App.js",
+            "color": "#424242"
+          },
+          {
+            "type": "text",
+            "text": " and replace the content with: "
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-1/app.png",
+        "alt": "Example React component"
+      },
+      {
+        "type": "paragraph",
+        "text": "Save the file, and the browser will automatically update to show:"
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-1/show.png",
+        "alt": "Updated React component"
+      },
+      {
+        "type": "subtitle",
+        "text": "Adding Interactivity with State"
+      },
+      {
+        "type": "paragraph",
+        "text": "One of React's strengths is its ability to update the UI when data changes. Let's add a button that changes a message when clicked."
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "Modify "
+          },
+          {
+            "type": "highlight",
+            "text": "src/App.js",
+            "color": "#424242"
+          },
+          {
+            "type": "text",
+            "text": " like this: "
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-1/app1.png",
+        "alt": "React state example"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here's what happens:"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "text": [
+              {
+                "type": "highlight",
+                "text": "useState",
+                "color": "#424242"
+              },
+              {
+                "type": "text",
+                "text": " creates a state variable "
+              },
+              {
+                "type": "highlight",
+                "text": "message",
+                "color": "#424242"
+              },
+              {
+                "type": "text",
+                "text": " and a function "
+              },
+              {
+                "type": "highlight",
+                "text": "setMessage",
+                "color": "#424242"
+              },
+              {
+                "type": "text",
+                "text": " to update it."
+              }
+            ]
+          },
+          {
+            "text": [
+              {
+                "type": "text",
+                "text": "When the button is clicked, "
+              },
+              {
+                "type": "highlight",
+                "text": "handleClick",
+                "color": "#424242"
+              },
+              {
+                "type": "text",
+                "text": " changes the message."
+              }
+            ]
+          },
+          {
+            "text": "React updates the UI automatically to show the new message."
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "What Next ?"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "text": "Learn about props to pass data between components."
+          },
+          {
+            "text": [
+              {
+                "type": "text",
+                "text": "Explore component lifecycle and hooks like "
+              },
+              {
+                "type": "highlight",
+                "text": "useEffect",
+                "color": "#424242"
+              }
+            ]
+          },
+          {
+            "text": "Start building small projects like a to-do list or a weather app."
+          },
+          {
+            "text": [
+              {
+                "type": "text",
+                "text": "Read the official React documentation at "
+              },
+              {
+                "type": "link",
+                "text": "reactjs.org",
+                "href": "https://reactjs.org",
+                "color": "#FEC544"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "Summary"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "text": "React is a JavaScript library for building user interfaces using components."
+          },
+          {
+            "text": [
+              {
+                "type": "text",
+                "text": "Use npm with "
+              },
+              {
+                "type": "highlight",
+                "text": "create react-app",
+                "color": "#424242"
+              },
+              {
+                "type": "text",
+                "text": " to quickly start a new React project."
+              }
+            ]
+          },
+          {
+            "text": "React apps are fast, efficient, and easy to maintain thanks to the virtual DOM and declarative code."
+          },
+          {
+            "text": "With React, you can build interactive UIs by managing state and responding to user actions."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "If you want, I can also help you build simple React projects step-by-step. Just ask!"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "mainTitle": "What is SOLID ? The Solid Principles",
+    "shortTitle": "What is SOLID ? The Solid Principles",
+    "author": "Abdulla Rahimli",
+    "date": "26-07-2025",
+    "mainImage": "/src/assets/images/blog/blog-2/solid.png",
+    "tags": [
+      "SOLID",
+      "OOP",
+      "Software Design",
+      "Principles",
+      "Clean Code",
+      "Maintainability",
+      "Scalability",
+      "Software Engineering"
+    ],
+
+    "content": [
+      {
+        "type": "title",
+        "text": "The SOLID Principles: The Secret to Writing Maintainable and Scalable Code"
+      },
+      {
+        "type": "paragraph",
+        "withBorder": true,
+        "content": [
+          {
+            "type": "text",
+            "text": "In the world of software development, writing solid code isn’t just a best practice — it's a necessity. But what does “solid” really mean? The answer lies in the "
+          },
+          {
+            "type": "extrabold",
+            "text": "SOLID"
+          },
+          {
+            "type": "text",
+            "text": " principles."
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "💡 What is SOLID?"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "SOLID"
+          },
+          {
+            "type": "text",
+            "text": " is an acronym for five object-oriented design principles aimed at making code cleaner, easier to maintain, and more flexible. These principles were introduced by Robert C. Martin (aka Uncle Bob) and have become a cornerstone of professional software engineering."
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "S — Single Responsibility Principle"
+      },
+      {
+        "type": "paragraph",
+        "withBorder": true,
+        "content": [
+          {
+            "type": "text",
+            "text": "“A class should have only one reason to change.”"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Each class or module should focus on a single responsibility. If your class handles too many tasks — like both data logic and UI rendering — it becomes harder to manage, test, and extend."
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-2/productManagement.png"
+      },
+      {
+        "type": "subtitle",
+        "text": "O — Open/Closed Principle"
+      },
+      {
+        "type": "paragraph",
+        "withBorder": true,
+        "content": [
+          {
+            "type": "text",
+            "text": "“Software entities should be open for extension, but closed for modification.”"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "You should be able to extend the behavior of your classes without changing their existing code. This helps you avoid breaking existing functionality when introducing new features."
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-2/discountStrategies.png"
+      },
+      {
+        "type": "subtitle",
+        "text": "L — Liskov Substitution Principle"
+      },
+      {
+        "type": "paragraph",
+        "withBorder": true,
+        "content": [
+          {
+            "type": "text",
+            "text": "“Objects of a superclass should be replaceable with objects of its subclasses without breaking the application.”"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "If class B is a subclass of class A, you should be able to use B wherever A is expected — without unexpected behavior."
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-2/birdClasses.png"
+      },
+      {
+        "type": "subtitle",
+        "text": "I — Interface Segregation Principle"
+      },
+      {
+        "type": "paragraph",
+        "withBorder": true,
+        "content": [
+          {
+            "type": "text",
+            "text": "“Clients should not be forced to depend on interfaces they do not use.”"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Instead of creating large, generic interfaces, it's better to have smaller, more specific interfaces tailored to the needs of each client."
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-2/interfacesAndClasses.png"
+      },
+      {
+        "type": "subtitle",
+        "text": "D — Dependency Inversion Principle"
+      },
+      {
+        "type": "paragraph",
+        "withBorder": true,
+        "content": [
+          {
+            "type": "text",
+            "text": "“High-level modules should not depend on low-level modules. Both should depend on abstractions.”"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Your code should depend on abstractions (interfaces), not concrete implementations. This makes your system more modular and easier to change."
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-2/databaseInterfaceExample.png"
+      },
+      {
+        "type": "subtitle",
+        "text": "Conclusion"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "The "
+          },
+          {
+            "type": "extrabold",
+            "text": "SOLID"
+          },
+          {
+            "type": "text",
+            "text": " principles aren't just abstract theory — they're practical, proven guidelines for writing testable, maintainable, and scalable software."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "✅ By following these principles in your daily coding practices, you're laying a strong foundation for systems that will remain robust and adaptable in the long run."
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "mainTitle": "What is OOP ? The OOP principles",
+    "shortTitle": "What is OOP ? The OOP principles",
+    "author": "Abdulla Rahimli",
+    "date": "26-07-2025",
+    "mainImage": "/src/assets/images/blog/blog-3/oop.jpg",
+    "tags": [
+      "OOP",
+      "Object-Oriented Programming",
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Abstraction",
+      "Software Design",
+      "Programming Principles"
+    ],
+
+    "content": [
+      {
+        "type": "title",
+        "text": "Understanding Object-Oriented Programming (OOP): A Comprehensive Guide"
+      },
+      {
+        "type": "subtitle",
+        "text": "💡 What is OOP?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Object-Oriented Programming (OOP) is a programming paradigm based on the concept of \"objects\", which can contain data in the form of fields (often called attributes or properties) and code in the form of procedures (often known as methods)."
+      },
+      {
+        "type": "paragraph",
+        "text": "OOP is widely used in modern software development and is supported by most major programming languages such as Java, C++, Python, C#, and more. Its primary goal is to increase the modularity, reusability, and maintainability of code."
+      },
+      {
+        "type": "subtitle",
+        "text": "📚 Core Principles of OOP"
+      },
+      {
+        "type": "paragraph",
+        "text": "OOP is governed by four fundamental principles:"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "1. Encapsulation"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Encapsulation refers to the bundling of data and the methods that operate on that data into a single unit, typically a class. It restricts direct access to some of the object's components, which is a means of preventing unintended interference and misuse."
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-3/bankAccount.png"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "2. Inheritance"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Inheritance allows one class (child or subclass) to inherit the properties and methods of another class (parent or superclass). This promotes code reuse and establishes a natural hierarchy between classes."
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-3/animalClassExample.png"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "3. Polymorphism"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Polymorphism means \"many forms\". It allows objects to be treated as instances of their parent class rather than their actual class. The exact method that is invoked is determined at runtime (dynamic polymorphism) or compile-time (static polymorphism)."
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-3/shapeInheritance.png"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "4. Abstraction"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Abstraction is the process of hiding the internal implementation details and showing only the functionality. It helps to reduce complexity and allows the programmer to focus on interactions at a higher level."
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-3/vehicleMovement.png"
+      },
+      {
+        "type": "subtitle",
+        "text": "🔧 Why Use OOP?"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "text": "✅ Improved Code Reusability – Through inheritance and modular design."
+          },
+          {
+            "text": "✅ Better Code Maintainability – Isolated changes and bug fixing."
+          },
+          {
+            "text": "✅ Scalability – Easily extendable applications."
+          },
+          {
+            "text": "✅ Real-World Mapping – Easier to model real-world scenarios."
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "🧠 OOP in Practice"
+      },
+      {
+        "type": "paragraph",
+        "text": "OOP is particularly useful in large-scale software systems, such as:"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "text": "Desktop applications (e.g., Microsoft Office)"
+          },
+          {
+            "text": "Mobile applications (e.g., Android development with Java/Kotlin)"
+          },
+          {
+            "text": "Game development (e.g., Unity with C#)"
+          },
+          {
+            "text": "Web backend development (e.g., Django with Python, Spring Boot with Java)"
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "📌 Final Thoughts"
+      },
+      {
+        "type": "paragraph",
+        "text": "Object-Oriented Programming is more than just a programming technique—it is a methodology for organizing complex software systems in a way that is intuitive, efficient, and scalable. By mastering OOP, developers can write cleaner, more modular, and maintainable code that mirrors the real-world problems they are trying to solve."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "mainTitle": "AI Integration in Frontend Development: How to Use AI APIs Effectively",
+    "shortTitle": "How to Use AI APIs Effectively",
+    "author": "Abdulla Rahimli",
+    "date": "26-07-2025",
+    "mainImage": "/src/assets/images/blog/blog-4/ai.jpg",
+    "tags": [
+      "AI",
+      "Artificial Intelligence",
+      "Frontend Development",
+      "APIs",
+      "Machine Learning",
+      "NLP",
+      "Computer Vision",
+      "Web Development",
+      "OpenAI",
+      "Best Practices"
+    ],
+
+    "content": [
+      {
+        "type": "title",
+        "text": "AI Integration in Frontend Development"
+      },
+      {
+        "type": "subtitle",
+        "text": "Introduction"
+      },
+      {
+        "type": "paragraph",
+        "text": "Artificial Intelligence (AI) is transforming the way users interact with web applications. From intelligent search suggestions to real-time content generation, the integration of AI APIs in frontend development has unlocked a new realm of possibilities for developers. But how do we use AI APIs effectively in frontend projects without compromising performance, user experience, or maintainability?"
+      },
+      {
+        "type": "paragraph",
+        "text": "In this blog post, we will explore how frontend developers can leverage AI through APIs, with a focus on practical implementation, architecture considerations, and best practices."
+      },
+      {
+        "type": "subtitle",
+        "text": "Why Use AI in Frontend?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Frontend applications are increasingly expected to deliver personalized, interactive, and smart user experiences. AI can help achieve this in areas such as:"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "bold": "Natural Language Processing (NLP):",
+            "text": "Chatbots, language translation, content analysis."
+          },
+          {
+            "bold": "Computer Vision:",
+            "text": "Image classification, object detection, facial recognition."
+          },
+          {
+            "bold": "Recommendation Systems:",
+            "text": "Suggesting products, articles, or videos based on user behavior."
+          },
+          {
+            "bold": "Speech Recognition and Generation:",
+            "text": "Voice input handling, audio feedback."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "By using AI APIs (like OpenAI, Google Cloud AI, or Hugging Face), frontend developers can integrate powerful AI capabilities without training models from scratch."
+      },
+      {
+        "type": "subtitle",
+        "text": "Architecture: Where AI Fits in the Frontend"
+      },
+      {
+        "type": "paragraph",
+        "text": "There are two common ways to integrate AI APIs into a frontend application:"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "1. Direct API Calls from the Frontend"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Useful for low-risk, public-use cases (e.g., public chatbots, image classification):"
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-4/callingOpenAI.png",
+        "alt": "Calling Open AI"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pros:"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "text": "Simple to implement."
+          },
+          {
+            "text": "Real-time interaction."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Cons"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "text": "API keys are exposed (even with environment protection)."
+          },
+          {
+            "text": "Limited security and control."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "2. Proxying AI Requests via Backend"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "This method uses a server to securely interact with AI APIs, while the frontend sends only user input to the backend."
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-4/apiIntegration.png",
+        "alt": "Api Integration"
+      },
+      {
+        "type": "paragraph",
+        "text": "Pros:"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "text": "Better security (no exposed API keys)."
+          },
+          {
+            "text": "You can cache, preprocess, or modify requests."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Cons"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "text": "Slightly more complex setup."
+          },
+          {
+            "text": "Requires backend deployment."
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "Real-World Use Cases"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "1. AI-powered Search Suggestion"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "2. Image Captioning via Computer Vision API"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "3. Content Generation Tools"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "text": "Blog title generator"
+          },
+          {
+            "text": "Product description writer"
+          },
+          {
+            "text": "Social media post assistant"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "These tools are commonly implemented using models like GPT-4 via OpenAI API."
+      },
+      {
+        "type": "subtitle",
+        "text": "✅ Best Practices"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "🔐 1. Never expose API keys"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Use .env for client variables and always proxy through a backend for production apps."
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "⚡ 2. Optimize Latency"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Use asynchronous calls and loading indicators to manage slow AI responses."
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "🧪 3. Validate Inputs"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Avoid unexpected prompts or malicious content sent to AI APIs."
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "📦 4. Use SDKs where possible"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Some AI providers offer SDKs with built-in error handling and token management."
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "🧰 5. Graceful Fallbacks"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Always have a fallback if the AI API fails (e.g., “AI couldn’t process your request”)."
+      },
+      {
+        "type": "subtitle",
+        "text": "📚 Conclusion"
+      },
+      {
+        "type": "paragraph",
+        "text": "The rise of AI APIs has empowered frontend developers to build intelligent, engaging, and adaptive user experiences — without diving into complex machine learning pipelines. By understanding architectural strategies and applying secure, user-centric integration patterns, you can harness AI's full potential in your frontend apps."
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "mainTitle": "What is SignalR? A Beginner's Guide to Real-Time Communication",
+    "shortTitle": "What is SignalR? A Beginner's Guide",
+    "author": "Abdulla Rahimli",
+    "date": "26-07-2025",
+    "mainImage": "/src/assets/images/blog/blog-5/signalr.png",
+    "tags": [
+      "SignalR",
+      "Real-Time",
+      "WebSockets",
+      "ASP.NET Core",
+      "Realtime Communication",
+      "Live Chat",
+      "Notifications",
+      "Web Development",
+      "Microsoft",
+      "Scalability"
+    ],
+
+    "content": [
+      {
+        "type": "subtitle",
+        "text": "Introduction"
+      },
+      {
+        "type": "paragraph",
+        "text": "In today’s digitally connected world, users expect instantaneous responses and seamless interactions across web applications. Real-time communication has become a cornerstone of modern software, enabling live chats, notifications, collaborative tools, and interactive gaming experiences. Microsoft’s SignalR library emerges as a powerful tool for developers seeking to build real-time, bidirectional communication between clients and servers with minimal hassle."
+      },
+      {
+        "type": "paragraph",
+        "text": "This guide provides a comprehensive introduction to SignalR, exploring its architecture, core features, use cases, and why it is pivotal in the future of web and application development."
+      },
+      {
+        "type": "subtitle",
+        "text": "Understanding Real-Time Communication"
+      },
+      {
+        "type": "paragraph",
+        "text": "Traditional web applications operate on a request-response model, where the client sends a request to the server and waits for a response. This model is insufficient for real-time needs where data must be pushed instantly from server to client without the client explicitly requesting it."
+      },
+      {
+        "type": "paragraph",
+        "text": "Real-time communication protocols overcome this limitation by maintaining persistent connections, allowing servers to send updates proactively. Technologies like WebSockets, Server-Sent Events (SSE), and long polling serve as foundational building blocks for real-time apps."
+      },
+      {
+        "type": "subtitle",
+        "text": "What is SignalR?"
+      },
+      {
+        "type": "paragraph",
+        "text": "SignalR is an open-source ASP.NET library developed by Microsoft designed to simplify adding real-time web functionality to applications. It abstracts the complexities of low-level transport protocols and automatically chooses the best available transport method supported by the client and server, such as:"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "type": "paragraph",
+            "text": "WebSockets (preferred for its efficiency and full-duplex communication),"
+          },
+          {
+            "type": "paragraph",
+            "text": "Server-Sent Events,"
+          },
+          {
+            "type": "paragraph",
+            "text": "Long Polling."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "SignalR enables bi-directional communication between client and server, allowing servers to push content instantly to connected clients."
+      },
+      {
+        "type": "subtitle",
+        "text": "Core Features of SignalR"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "1. Automatic Transport Fallback - "
+          },
+          {
+            "type": "text",
+            "text": "SignalR automatically selects the optimal transport method supported by the client browser and server, gracefully falling back to other transports if necessary. This ensures broad compatibility without developer intervention."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "2. Hubs API - "
+          },
+          {
+            "type": "text",
+            "text": "SignalR’s high-level API called Hubs enables clients and servers to call methods on each other directly. This abstraction simplifies the development of real-time features, enabling easy broadcasting of messages or invoking specific client functions."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "3. Connection Management - "
+          },
+          {
+            "type": "text",
+            "text": "SignalR handles client connection lifecycle events, including connecting, reconnecting, and disconnecting, offering developers hooks to manage these states effectively."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "extrabold",
+            "text": "4. Scalability with Backplanes - "
+          },
+          {
+            "type": "text",
+            "text": "For large-scale applications distributed across multiple servers, SignalR supports backplanes like Redis or Azure Service Bus to synchronize messages across servers ensuring consistency."
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "Typical Use Cases of SignalR"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "bold": "Live Chat Applications - ",
+            "text": "Allow users to send and receive messages instantly without page refreshes."
+          },
+          {
+            "bold": "Real-Time Notifications - ",
+            "text": "Notify users immediately about events such as new emails, alerts, or system updates."
+          },
+          {
+            "bold": "Collaborative Tools - ",
+            "text": "Enable multiple users to work simultaneously on documents, whiteboards, or dashboards."
+          },
+          {
+            "bold": "Live Data Feeds and Dashboards - ",
+            "text": "Display financial data, stock prices, or IoT sensor data that update live."
+          },
+          {
+            "bold": "Online Gaming - ",
+            "text": "Manage real-time multiplayer interactions and game state synchronization."
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "Why SignalR Matters for the Future"
+      },
+      {
+        "type": "paragraph",
+        "text": "As the demand for responsive, interactive, and immersive applications increases, SignalR’s role becomes increasingly critical. Key trends include:"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "bold": "Growing IoT Ecosystem - ",
+            "text": "SignalR can power real-time communication between devices and cloud servers, crucial for smart environments."
+          },
+          {
+            "bold": "Expanding Cloud-Native Architectures - ",
+            "text": "SignalR integrates seamlessly with Microsoft Azure services, providing scalable real-time messaging infrastructure for modern cloud applications."
+          },
+          {
+            "bold": "Progressive Web Apps (PWAs) and Mobile Apps - ",
+            "text": "Real-time updates enhance user experience by providing immediate feedback and synchronization."
+          },
+          {
+            "bold": "Machine Learning and AI Systems - ",
+            "text": "Real-time data streams enable adaptive and responsive AI-powered applications."
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "Getting Started with SignalR: A Simple Example"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here is a brief overview of how to set up a basic SignalR hub in an ASP.NET Core application:"
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-5/chatHub.png",
+        "alt": "Chat Hub"
+      },
+      {
+        "type": "paragraph",
+        "text": "On the client side (JavaScript), you establish a connection and define how to handle incoming messages:"
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-5/signalRConnectionSetup.png",
+        "alt": "SignalR Connection Setup"
+      },
+      {
+        "type": "paragraph",
+        "text": "This example highlights SignalR’s straightforward model for enabling real-time features."
+      },
+      {
+        "type": "subtitle",
+        "text": "Conclusion"
+      },
+      {
+        "type": "paragraph",
+        "text": "SignalR stands as a robust and flexible framework facilitating real-time communication in modern web applications. By abstracting transport complexities and offering scalable architectures, it empowers developers to meet growing user expectations for immediacy and interactivity."
+      },
+      {
+        "type": "paragraph",
+        "text": "As technology evolves toward increasingly connected and intelligent systems, mastering SignalR will be a valuable skill for developers looking to build the next generation of responsive, real-time applications."
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "mainTitle": "What is Redux & Redux Toolkit ?",
+    "shortTitle": "What is Redux & Redux Toolkit ?",
+    "author": "Abdulla Rahimli",
+    "date": "26-07-2025",
+    "mainImage": "/src/assets/images/blog/blog-6/redux.png",
+    "tags": [
+      "Redux",
+      "Redux Toolkit",
+      "React",
+      "State Management",
+      "JavaScript",
+      "Frontend",
+      "Async Thunks",
+      "TypeScript",
+      "RTK Query",
+      "Web Development"
+    ],
+
+    "content": [
+      {
+        "type": "subtitle",
+        "text": "Introduction"
+      },
+      {
+        "type": "paragraph",
+        "text": "In modern frontend development, especially within large-scale React applications, state management becomes increasingly complex. To address this, Redux was introduced as a predictable state container, followed by Redux Toolkit as its official, standardized approach to simplify Redux development. In this blog post, we explore the evolution, core principles, benefits, and future relevance of Redux and Redux Toolkit in contemporary software architecture."
+      },
+      {
+        "type": "subtitle",
+        "text": "What is Redux?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Redux is a JavaScript library for managing and centralizing application state. Developed by Dan Abramov and Andrew Clark in 2015, Redux is inspired by the Flux architecture from Facebook and follows three core principles:"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "bold": "Single Source of Truth - ",
+            "text": "The entire application state is stored in a single, centralized object tree."
+          },
+          {
+            "bold": "State is Read-Only - ",
+            "text": "The only way to change the state is by emitting an action, an object describing what happened."
+          },
+          {
+            "bold": "Changes are Made with Pure Functions (Reducers) - ",
+            "text": "To specify how the state tree is transformed by actions, you write pure functions known as reducers."
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "Redux in Practice"
+      },
+      {
+        "type": "paragraph",
+        "text": "Here's a basic flow in Redux:"
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "🔸 A UI component dispatches an action (e.g., "
+          },
+          {
+            "type": "highlight",
+            "text": "{ type: \"INCREMENT\" }",
+            "color": "#424242"
+          },
+          {
+            "type": "text",
+            "text": ")"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "🔸 The reducer handles this action and returns "
+          },
+          {
+            "type": "extrabold",
+            "text": "a new state."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": [
+          {
+            "type": "text",
+            "text": "🔸 The store updates and re-renders the component with new data. "
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Despite its powerful architecture, Redux requires a lot of boilerplate code: actions, action types, reducers, and configuration. As applications grew more complex, this became a bottleneck — both in productivity and readability."
+      },
+      {
+        "type": "subtitle",
+        "text": "Introducing Redux Toolkit"
+      },
+      {
+        "type": "paragraph",
+        "text": "To solve these challenges, the Redux team introduced Redux Toolkit (RTK) in 2019 — the official, recommended way to write Redux logic."
+      },
+      {
+        "type": "paragraph",
+        "text": "Redux Toolkit simplifies Redux development by:"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "text": "Reducing boilerplate."
+          },
+          {
+            "text": [
+              {
+                "type": "text",
+                "text": "Providing pre-built tools ("
+              },
+              {
+                "type": "highlight",
+                "text": "createSlice, createAsyncThunk",
+                "color": "#424242"
+              },
+              {
+                "type": "text",
+                "text": ", etc.)."
+              }
+            ]
+          },
+          {
+            "text": "Encouraging best practices out of the box."
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "✅ Key Features of Redux Toolkit"
+      },
+
+      {
+        "type": "list",
+        "items": [
+          {
+            "text": [
+              {
+                "type": "highlight",
+                "text": "configureStore()",
+                "color": "#424242"
+              },
+              {
+                "type": "text",
+                "text": "– sets up the store with good defaults like Redux DevTools and middleware."
+              }
+            ]
+          },
+          {
+            "text": [
+              {
+                "type": "highlight",
+                "text": "createSlice()",
+                "color": "#424242"
+              },
+              {
+                "type": "text",
+                "text": "– automatically generates action creators and reducers."
+              }
+            ]
+          },
+          {
+            "text": [
+              {
+                "type": "highlight",
+                "text": "createAsyncThunk()",
+                "color": "#424242"
+              },
+              {
+                "type": "text",
+                "text": "– handles async logic like fetching data from APIs."
+              }
+            ]
+          },
+          {
+            "text": [
+              {
+                "type": "extrabold",
+                "text": "Immutable Updates "
+              },
+              {
+                "type": "text",
+                "text": "– powered by Immer.js, allowing us to write mutable-style code safely."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "Example: Redux vs Redux Toolkit"
+      },
+      {
+        "type": "paragraph",
+        "text": "Classic Redux:"
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-6/incrementReducer.png"
+      },
+      {
+        "type": "paragraph",
+        "text": "Redux Toolkit:"
+      },
+      {
+        "type": "image",
+        "src": "/src/assets/images/blog/blog-6/counterSlice.png"
+      },
+      {
+        "type": "paragraph",
+        "text": "As seen above, Redux Toolkit drastically simplifies the code and improves maintainability."
+      },
+      {
+        "type": "subtitle",
+        "text": "Redux Toolkit & Future Trends"
+      },
+      {
+        "type": "paragraph",
+        "text": "Redux Toolkit aligns with modern trends in frontend architecture:"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "text": [
+              {
+                "type": "extrabold",
+                "text": "Scalability "
+              },
+              {
+                "type": "text",
+                "text": "for large enterprise apps."
+              }
+            ]
+          },
+          {
+            "text": [
+              {
+                "type": "extrabold",
+                "text": "TypeScript integration "
+              },
+              {
+                "type": "text",
+                "text": "for strong typing and safety."
+              }
+            ]
+          },
+          {
+            "text": [
+              {
+                "type": "extrabold",
+                "text": "Support for React Server Components (RSC) "
+              },
+              {
+                "type": "text",
+                "text": "and concurrent rendering."
+              }
+            ]
+          },
+          {
+            "text": [
+              {
+                "type": "extrabold",
+                "text": "Async Middleware (thunks, RTK Query) "
+              },
+              {
+                "type": "text",
+                "text": "to fetch and cache data more efficiently."
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "type": "paragraph",
+        "withBorder": true,
+        "content": [
+          {
+            "type": "text",
+            "text": "🔮 Future Outlook: While lightweight solutions like Zustand or Jotai are gaining popularity, Redux (especially with RTK) remains a robust choice for large-scale, collaborative applications where state structure and predictability are essential."
+          }
+        ]
+      },
+      {
+        "type": "subtitle",
+        "text": "📚 Conclusion"
+      },
+      {
+        "type": "paragraph",
+        "text": "Redux and Redux Toolkit represent a paradigm of structured and maintainable state management in JavaScript applications. While Redux laid the foundation, Redux Toolkit has modernized it by offering a developer-friendly, standardized solution. For teams building scalable applications with React, understanding and applying Redux Toolkit is a crucial skill in 2025 and beyond."
+      }
+    ]
+  }
+]
