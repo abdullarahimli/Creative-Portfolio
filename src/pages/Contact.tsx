@@ -108,7 +108,7 @@ const Contact = () => {
                                             <span className="st-social-icon"><i className="fab fa-whatsapp"></i></span>
                                             <span className="st-icon-name">WhatsApp</span>
                                         </a>
-                                        <a href="https://www.linkedin.com/in/abdulla-rahimli-3a2a4b253/" target='blank' className="st-social-btn">
+                                        <a href="https://www.instagram.com/abdullarahimli/" target='blank' className="st-social-btn">
                                             <span className="st-social-icon"><i className="fab fa-instagram"></i></span>
                                             <span className="st-icon-name">Instagram</span>
                                         </a>
@@ -120,7 +120,7 @@ const Contact = () => {
                                             <span className="st-social-icon"><i className="fab fa-twitter"></i></span>
                                             <span className="st-icon-name">Twitter</span>
                                         </a>
-                                        <a href="https://dribbble.com/abdullarahimli" target='blank' className="st-social-btn">
+                                        <a href="https://dribbble.com/abdullarahimli/about?utm_source=Clipboard_%22clipboard_about%22&utm_campaign=%22abdullarahimli%22&utm_content=%22About%20abdullarahimli%22&utm_medium=Social_Share" target='blank' className="st-social-btn">
                                             <span className="st-social-icon"><i className="fab fa-dribbble"></i></span>
                                             <span className="st-icon-name">Dribbble</span>
                                         </a>

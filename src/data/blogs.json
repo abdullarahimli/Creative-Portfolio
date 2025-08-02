@@ -4,7 +4,7 @@
     "mainTitle": "What is React? A Beginner's Guide",
     "shortTitle": "What is React? A Beginner's Guide",
     "author": "Abdulla Rahimli",
-    "date": "26-07-2025",
+    "date": "12-01-2025",
     "mainImage": "/images/blog/blog-1/react.png",
     "tags": [
       "React",
@@ -414,7 +414,7 @@
     "mainTitle": "What is SOLID ? The Solid Principles",
     "shortTitle": "What is SOLID ? The Solid Principles",
     "author": "Abdulla Rahimli",
-    "date": "26-07-2025",
+    "date": "22-02-2025",
     "mainImage": "/images/blog/blog-2/solid.png",
     "tags": [
       "SOLID",
@@ -609,7 +609,7 @@
     "mainTitle": "What is OOP ? The OOP principles",
     "shortTitle": "What is OOP ? The OOP principles",
     "author": "Abdulla Rahimli",
-    "date": "26-07-2025",
+    "date": "09-03-2025",
     "mainImage": "/images/blog/blog-3/oop.jpg",
     "tags": [
       "OOP",
@@ -776,7 +776,7 @@
     "mainTitle": "AI Integration in Frontend Development: How to Use AI APIs Effectively",
     "shortTitle": "How to Use AI APIs Effectively",
     "author": "Abdulla Rahimli",
-    "date": "26-07-2025",
+    "date": "10-04-2025",
     "mainImage": "/images/blog/blog-4/ai.jpg",
     "tags": [
       "AI",
@@ -1078,7 +1078,7 @@
     "mainTitle": "What is SignalR? A Beginner's Guide to Real-Time Communication",
     "shortTitle": "What is SignalR? A Beginner's Guide",
     "author": "Abdulla Rahimli",
-    "date": "26-07-2025",
+    "date": "25-05-2025",
     "mainImage": "/images/blog/blog-5/signalr.png",
     "tags": [
       "SignalR",
@@ -1306,7 +1306,7 @@
     "mainTitle": "What is Redux & Redux Toolkit ?",
     "shortTitle": "What is Redux & Redux Toolkit ?",
     "author": "Abdulla Rahimli",
-    "date": "26-07-2025",
+    "date": "24-07-2025",
     "mainImage": "/images/blog/blog-6/redux.png",
     "tags": [
       "Redux",

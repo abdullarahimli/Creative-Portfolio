@@ -166,12 +166,13 @@ const SkillsSection: React.FC = () => {
                                             <li>
                                                 <span>Birthday</span> : <span>Feb 22, 1995</span>
                                             </li>
-                                            <li>
+                                            <li className="no-underline">
                                                 <span>Phone</span> : <span>+994 70 572 82 95</span>
                                             </li>
                                             <li
                                                 style={{ cursor: 'pointer' }}
                                                 onClick={handleEmailClick}
+                                                className="no-underline"
                                             >
                                                 <span>Email</span> : {''}
                                                 <span style={{ userSelect: 'none' }}>abdullavr@code.edu.az
@@ -206,7 +207,7 @@ const SkillsSection: React.FC = () => {
                                         <div className="st-text-block-btn">
                                             <a
                                                 download
-                                                href="/public/cv/cv.pdf"
+                                                href="/cv/cv.pdf"
                                                 className="st-btn st-style1 st-color1"
                                             >
                                                 Download CV
