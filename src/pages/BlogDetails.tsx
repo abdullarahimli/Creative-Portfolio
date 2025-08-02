@@ -148,7 +148,7 @@ const BlogDetails = () => {
                         <div className="col-lg-10 offset-md-1">
                             <div className="st-post-details st-style1">
                                 {(blog.content as ContentBlock[]).map((block, index) => (
-                                    <RenderContent key={index} block={block} index={index} />
+                                    <RenderContent key={index} block={block as ContentBlock} index={index} />
                                 ))}
 
                                 <div className="st-post-meta d-flex flex-wrap flex-md-row justify-content-between align-items-start border-t border-b py-4 mt-5 gap-4">
