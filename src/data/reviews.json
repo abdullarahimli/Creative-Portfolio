@@ -4,21 +4,21 @@
     "name": "Alovsat Muslumov",
     "role": "Prof.Dr",
     "text": "Designed user-friendly interfaces that improved engagement and met goals.",
-    "img": "/public/images/review/alovsat.png"
+    "img": "public/images/review/alovsat.png"
   },
   {
     "id": 2,
     "name": "Teymur Rahimli",
     "role": "Senior Developer",
     "text": "Led the team to deliver quality software on time, ensuring smooth collaboration.",
-    "img": "/public/images/review/teymur.png"
+    "img": "public/images/review/teymur.png"
   },
   {
     "id": 3,
     "name": "Tabriz Aliyev",
     "role": "Financial Manager",
     "text": "Oversaw projects efficiently, maintaining teamwork and delivering on schedule.",
-    "img": "/public/images/review/tabriz.png"
+    "img": "public/images/review/tabriz.png"
   },
 
   {
@@ -26,6 +26,6 @@
     "name": "Farid Zalov",
     "role": "Accounting Manager",
     "text": "Met milestones with attention to detail and fostered team communication.",
-    "img": "/public/images/review/farid.png"
+    "img": "public/images/review/farid.png"
   }
 ]
