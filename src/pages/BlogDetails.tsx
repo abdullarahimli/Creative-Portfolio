@@ -1,11 +1,13 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import blogs from '../data/blogs.json';
 import profile from '../assets/images/client/profile.png'
+// import RenderContent, { type ContentBlock } from '../components/RenderContent';
 import RenderContent from '../components/RenderContent';
+// import ContentBlock from '../components/RenderContent';
 import React, { useEffect, useState } from 'react';
 import { collection, addDoc, serverTimestamp, query, where, orderBy, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
-import type { CommentType } from '../types/Types';
+import type { CommentType, ContentBlock } from '../types/Types';
 
 const BlogDetails = () => {
 
