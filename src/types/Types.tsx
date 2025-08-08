@@ -35,3 +35,41 @@ export interface CommentType {
     comment?: string;
     createdAt?: any;
 }
+
+export interface ListTextPart {
+    type: 'underline' | 'highlight' | 'link' | 'text' | 'extrabold';
+    text: string;
+    color?: string;
+    href?: string;
+}
+
+export interface ListItem {
+    bold: string;
+    text: string | ListTextPart[];
+}
+
+export interface ContentBlock {
+    type:
+    | 'text'
+    | 'title'
+    | 'paragraph'
+    | 'subtitle'
+    | 'image'
+    | 'video'
+    | 'link'
+    | 'br'
+    | 'list'
+    | 'slider'
+    | 'group';
+    text?: string;
+    src?: string;
+    alt?: string;
+    href?: string;
+    items?: ListItem[];
+    images?: string[];
+    className?: string;
+    content?: ListTextPart[];
+    color?: string;
+    withBorder?: boolean;
+    contentItems?: ContentBlock[];
+}

@@ -1,5 +1,3 @@
-// components/ScrollToTopButton.tsx
-
 import { useEffect, useState } from 'react';
 
 const ScrollToTopButton = () => {

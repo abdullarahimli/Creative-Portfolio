@@ -3,8 +3,6 @@ import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const form = useRef<HTMLFormElement>(null);
-
-
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
@@ -25,9 +23,8 @@ const Contact = () => {
         }
     };
 
-
     return (
-        <div className='mt-0'>
+        <div className='mt-0' id='contact'>
             <section id="contact" className="st-dark-bg">
                 <div className="st-height-b100 st-height-lg-b80"></div>
                 <div className="container">
@@ -37,7 +34,6 @@ const Contact = () => {
                     </div>
                     <div className="st-height-b25 st-height-lg-b25"></div>
                 </div>
-
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
@@ -124,11 +120,6 @@ const Contact = () => {
                                             <span className="st-social-icon"><i className="fab fa-dribbble"></i></span>
                                             <span className="st-icon-name">Dribbble</span>
                                         </a>
-
-
-
-
-
                                     </div>
                                 </div>
                             </div>

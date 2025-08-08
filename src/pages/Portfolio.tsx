@@ -15,9 +15,6 @@ import cooper_lg from '../assets/images/portfolio/cooper_lg.png'
 import { Link as ScrollLink } from "react-scroll";
 import reviews from '../data/reviews.json'
 
-
-
-
 const Portfolio = () => {
     const settings = {
         arrows: false,
@@ -104,7 +101,6 @@ const Portfolio = () => {
         },
     ];
 
-
     return (
         <div className='mt-0' id='portfolio'>
             <section id="portfolio">
@@ -174,8 +170,6 @@ const Portfolio = () => {
                     </div>
                     <div className="st-height-b25 st-height-lg-b25"></div>
                 </div>
-
-
                 <div className="container">
                     <div className="st-slider st-style1 st-reviews-wrap">
                         <div

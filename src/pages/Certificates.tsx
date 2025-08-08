@@ -1,22 +1,16 @@
 import { useEffect } from 'react';
 import lightGallery from 'lightgallery';
-
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import lgFullscreen from 'lightgallery/plugins/fullscreen';
-
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-thumbnail.css';
 import 'lightgallery/css/lg-zoom.css';
-
 import development from '../assets/images/certificates/development.png';
 import design from '../assets/images/certificates/design.png';
 import skills from '../assets/images/certificates/skills.png';
 import react from '../assets/images/certificates/react.png';
-
-
 import { Link as ScrollLink } from "react-scroll";
-
 import '../assets/css/style.css';
 
 const Certificates = () => {

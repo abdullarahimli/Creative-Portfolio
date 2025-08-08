@@ -1,7 +1,6 @@
 import resumeIcon1 from '../assets/images/icon/resume-icon1.png'
 import resumeIcon2 from '../assets/images/icon/resume-icon2.png'
 
-
 const Resume = () => {
     return (
         <div className='mt-0'>
@@ -165,11 +164,6 @@ const Resume = () => {
                                         </div>
                                     </div>
                                     <div className="st-height-b50 st-height-lg-b30"></div>
-
-
-
-
-
                                     <div className="st-resume-timeline">
                                         <h3 className="st-resume-timeline-title">
                                             Technical English

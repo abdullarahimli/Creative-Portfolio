@@ -2,40 +2,27 @@ import { useNavigate, useParams } from 'react-router-dom';
 import blogs from '../data/blogs.json';
 import profile from '../assets/images/client/profile.png'
 import RenderContent, { type ContentBlock } from '../components/RenderContent';
-
-
 import React, { useEffect, useState } from 'react';
 import { collection, addDoc, serverTimestamp, query, where, orderBy, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 import type { CommentType } from '../types/Types';
 
-
-
 const BlogDetails = () => {
 
     const { id } = useParams<{ id: string }>();
     const blog = blogs.find((b) => b.id === id);
-
     const [comments, setComments] = useState<CommentType[]>([]);
-
-
-
     const [author, setAuthor] = useState('');
     const [email, setEmail] = useState('');
     const [website, setWebsite] = useState('');
     const [commentText, setCommentText] = useState('');
     const [loadingComments, setLoadingComments] = useState(true);
-
     const navigate = useNavigate();
-
     const currentIndex = blogs.findIndex((b) => b.id === id);
-
     const previousIndex = (currentIndex - 1 + blogs.length) % blogs.length;
     const nextIndex = (currentIndex + 1) % blogs.length;
-
     const previousBlog = blogs[previousIndex];
     const nextBlog = blogs[nextIndex];
-
     const fetchComments = async () => {
         setLoadingComments(true);
         try {
@@ -90,11 +77,9 @@ const BlogDetails = () => {
         }
     };
 
-
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [id]);
-
 
     const getSocialShareUrl = (platform: string) => {
         const currentUrl = encodeURIComponent(window.location.href);
@@ -114,10 +99,7 @@ const BlogDetails = () => {
         }
     };
 
-
-
     if (!blog) return <p>Blog not found</p>;
-
 
     return (
         <section id='blogdetails' className='st-dark-bg'>
@@ -271,8 +253,6 @@ const BlogDetails = () => {
                                         </ol>
                                     )}
                                 </div>
-
-
                                 <div className="comment-respond">
                                     <h3 className="comment-reply-title">Add your comment</h3>
                                     <form onSubmit={handleSubmit} className="comment-form">
@@ -325,8 +305,6 @@ const BlogDetails = () => {
                                     </form>
                                 </div>
                             </div>
-
-
                             <div className="st-height-b100 st-height-lg-b80"></div>
                         </div>
                     </div>

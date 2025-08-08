@@ -1,7 +1,7 @@
 import { doc, deleteDoc } from "firebase/firestore";
 import { db } from '../firebase';
 
-// Yorum silme fonksiyonu
+// Delete comment function
 export const deleteComment = async (commentId) => {
   try {
     await deleteDoc(doc(db, "comments", commentId));

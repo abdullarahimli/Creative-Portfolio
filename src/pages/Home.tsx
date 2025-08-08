@@ -56,7 +56,7 @@ const Home = () => {
                             I also make website more & more interactive
                             with web animations.
                         </p>
-                        <div className="st-hero-social-links flex justify-center gap-4 mt-6">
+                        <div className="st-hero-social-links flex justify-center gap-0 mt-6">
                             <a href="https://www.facebook.com/abdulla.rehimli.54" target='_blank' rel="noreferrer" className="st-social-btn text-xl">
                                 <i className="fab fa-facebook-f"></i>
                             </a>

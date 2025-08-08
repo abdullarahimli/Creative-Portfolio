@@ -5,6 +5,7 @@ import "../assets/css/animate.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Tabs, Tab } from "../components/Tabs";
+import VisitorCounter from "../components/VisitorCounter";
 
 const ProgressBar: React.FC<ProgressBarProps> = ({ title, percentage }) => {
     const progressRef = useRef<HTMLDivElement>(null);
@@ -21,7 +22,6 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ title, percentage }) => {
 
         return () => clearTimeout(timeout);
     }, [percentage]);
-
 
     useEffect(() => {
         AOS.init({
@@ -64,17 +64,9 @@ const SkillsSection: React.FC = () => {
 
     const [copied, setCopied] = useState(false);
 
-    // const handleEmailClick = () => {
-    //     navigator.clipboard.writeText("abdullavr@code.edu.az");
-    //     setCopied(true);
-    //     setTimeout(() => setCopied(false), 2000);
-    // };
-
-
     const handleEmailClick = () => {
         const email = "abdullavr@code.edu.az";
 
-        // Modern clipboard API destekleniyorsa
         if (navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
             navigator.clipboard.writeText(email)
                 .then(() => {
@@ -90,12 +82,12 @@ const SkillsSection: React.FC = () => {
         }
     };
 
-    // Eski yönteme fallback
+    // Fallback to the old way
     const fallbackCopyTextToClipboard = (text: string) => {
         const textArea = document.createElement("textarea");
         textArea.value = text;
 
-        // Mobil uyumluluk için
+        // For mobile compatibility
         textArea.style.position = "fixed";
         textArea.style.top = "0";
         textArea.style.left = "0";
@@ -119,7 +111,6 @@ const SkillsSection: React.FC = () => {
 
         document.body.removeChild(textArea);
     };
-
 
     return (
         <div id="about" className="mt-0">
@@ -545,7 +536,7 @@ const SkillsSection: React.FC = () => {
                 <div className="st-height-b100 st-height-lg-b80"></div>
             </section>
 
-            <section className="st-dark-bg">
+            <section className="st-dark-b">
                 <div className="st-height-b100 st-height-lg-b80"></div>
                 <div className="container">
                     <div className="st-section-heading st-style1">
@@ -675,6 +666,10 @@ const SkillsSection: React.FC = () => {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section>
+                <VisitorCounter />
             </section>
         </div>
     );

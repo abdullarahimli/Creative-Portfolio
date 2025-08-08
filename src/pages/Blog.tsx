@@ -95,7 +95,8 @@ const Blog = () => {
                         <div className="pagination st-style1 st-flex st-hidden"></div>
                     </div>
                 </div>
-                <div className="st-height-b95 st-height-lg-b75"></div>
+                <div className="st-height-b100 st-height-lg-b80"></div>
+
             </section>
         </div>
     )

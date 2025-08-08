@@ -8,10 +8,10 @@ export const addComment = async ({ blogId, author, email, comment }) => {
       author,
       email,
       comment,
-      createdAt: serverTimestamp(),  // Firestore server zaman damgası
+      createdAt: serverTimestamp(),
     });
   } catch (error) {
     console.error("Yorum eklenemedi:", error);
-    throw error;  // İstersen hata yönetimi için dışa atabilirsin
+    throw error; 
   }
 };
